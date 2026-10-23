@@ -97,10 +97,7 @@ a:hover {
 .site-header nav a:hover {
   text-decoration:underline;
 }
-.site-header nav a:last-child {
-  border-bottom:1px solid var(--ink);
-  padding-bottom:5px;
-}
+
 .hero {
   position:relative;
   padding-block:73px 40px;
@@ -623,3 +620,6 @@ h1 {
   .brand-subtitle { font-size: 10px; }
   .site-header nav { gap: 20px; }
 }
+
+.site-header nav { flex-wrap: wrap; }
+@media(max-width:600px) { .site-header nav { width:100%; gap:12px 18px; } .site-header nav a:first-child { display:inline; } }
